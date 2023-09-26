@@ -20,10 +20,11 @@ const onClickAdd = () => {
   //button(削除)タグ生成
   const deleteButton = document.createElement("button");
   deleteButton.innerText = "削除";
-  console.log(deleteButton);
 
   //divタグの子要素に各要素を設定
   div.appendChild(li);
+  div.appendChild(completeButton);
+  div.appendChild(deleteButton);
 
   // 未完了のリストに追加
   document.getElementById("incomplete-list").appendChild(div);
