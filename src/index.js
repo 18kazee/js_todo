@@ -18,8 +18,7 @@ const onClickAdd = () => {
   completeButton.innerText = "完了";
   completeButton.addEventListener("click", () => {
     // 押された完了ボタンの親タグ(div)を未完了リストから削除
-    const completeTarget = completeButton.parentNode;
-    document.getElementById("incomplete-list").removeChild(completeTarget);
+    deleteFromIncomplete(completeButton.parentNode);
   });
 
   //button(削除)タグ生成
