@@ -42,6 +42,9 @@ const onClickAdd = () => {
     //divタグの子要素に各要素を設定
     addTarget.appendChild(li);
     addTarget.appendChild(backButton);
+
+    //完了リストに追加
+    document.getElementById("complete-list").appendChild(addTarget);
   });
 
   //button(削除)タグ生成
