@@ -4,7 +4,11 @@ const onClickAdd = () => {
 
   // テキストボックスの値を初期化
   document.getElementById("add-text").value = "";
-  alert(innerText);
+
+  //div生成
+  const div = document.createElement("div");
+  div.className = "list-row";
+  console.log(div);
 };
 
 document
